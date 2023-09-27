@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Task 5</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Name:</label>
+                </td>
+                <td>
+                    <input id="i1" type="text" placeholder="Enter your name" />
+                    <span id="s1" style="color: red; margin-left: 10px;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email:</label>
+                </td>
+                <td>
+                    <input id="i2" type="email" placeholder="Enter email address" />
+                    <span id="s2" style="color: red; margin-left: 10px;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Website:</label>
+                </td>
+                <td>
+                    <input id="i3" type="text" placeholder="Enter URL" />
+                    <span id="s3" style="color: red; margin-left: 10px;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Message:</label>
+                </td>
+                <td>
+                    <textarea id="i4" type="text" rows="2"></textarea>
+                    <span id="s4" style="color: red; margin-left: 10px;"></span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button onclick="validate()" type="button">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+
+
+    <script>
+        function validate() {
+            
+            var username = document.getElementById("i1").value;
+            var email = document.getElementById("i2").value;
+            var website = document.getElementById("i3").value;
+            var message = document.getElementById("i4").value;
+            
+            if(username.length == 0) {
+                document.getElementById("s1").innerHTML = "This field is required";
+            } else {
+                document.getElementById("s1").innerHTML = "";
+            }
+
+            if(email.length == 0) {
+                document.getElementById("s2").innerHTML = "A valid email address is required";
+            } else {
+                document.getElementById("s2").innerHTML = "";
+            }
+
+            if(website.length == 0) {
+                document.getElementById("s3").innerHTML = "A valid url is required";
+            } else {
+                document.getElementById("s3").innerHTML = "";
+            }
+
+            if(message.length == 0) {
+                document.getElementById("s4").innerHTML = "This field is required";
+            }  else {
+                document.getElementById("s4").innerHTML = "";
+            }  
+        }
+    </script>
+</body>
+
+</html>
