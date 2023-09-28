@@ -1,6 +1,6 @@
 body {
     font-family: sans-serif;
-    background-color: #001C30;
+    background-color: #FFBB5C;
 }
 
 table.main-table {
@@ -14,7 +14,7 @@ table.main-table {
 }
 
 .main-table th {
-    color: lightgray;
+   background-color: #a74237;
 }
 
 .main-table th, .main-table td{
@@ -24,16 +24,16 @@ table.main-table {
     border-radius: 10px;
 }
 
-.lightgrey {
-    background-color: #64CCC5;
+.darkorange {
+    background-color: #E25E3E;
 }
 
-.darkgrey {
-    background-color: #176B87;
+.orange {
+    background-color: #FF9B50;
 }
 
-.dark {
-    background-color: #0c3745;
+.lightorange {
+    background-color: #FFBB5C;
 }
 
 table tr td, table tr th {
